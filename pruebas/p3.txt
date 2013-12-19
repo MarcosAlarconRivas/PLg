@@ -1,0 +1,17 @@
+# P3: Prueba de cortocircuitos e identificadores "fun"
+fun eq(n,m){~(n<>m)}
+
+fun fun(n) {
+   n>0	? n*fun(n-1)
+	: (eq(0,n)	? 1
+			:-fun(-n)
+	  )
+}
+fun foo(fun, fen, fon) {
+   fen>0
+	? fon||~(fun&&1+80||fen)%fon||~fon
+	: 3&&0&&fun*0&&~0
+}
+#
+&
+foo(fun(8), 3, 0)

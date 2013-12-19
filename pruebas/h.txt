@@ -1,0 +1,4 @@
+fun fan(0){ 0 }
+fun fun(fan){ 8 }
+&
+fun()+fan()+fon()

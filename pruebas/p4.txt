@@ -1,0 +1,9 @@
+#P4
+fun fun(n) {
+   n>0	? n*fun(n-1)
+	: n ? -fun(-n)
+	    :1
+}
+&
+fun(6)
+	  

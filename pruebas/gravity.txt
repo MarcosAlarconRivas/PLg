@@ -1,0 +1,16 @@
+fun sq( n){ n*n}	# cuadrado
+
+fun g_mar(){9780327 }# (um/s2) aceleración gravitatoria al nivel del mar
+
+fun erth_r(){ 6371}	# (km) radio terrestre
+
+fun g(h){		# (um/s2) aceleracion gravitatoria a h km de la superficie
+	sq(h+erth_r()) * g_mar() / sq( erth_r() )
+}
+fun umToM( um){	#pasa de micras a metros
+	um/1000000000
+}
+&umToM(g(100))	# devuleve la atraccion gravitatoria a 100 km de altura
+
+
+#desgraciadamente no funciona, los redondeos destruyen los datos

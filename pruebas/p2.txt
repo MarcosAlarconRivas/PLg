@@ -1,0 +1,17 @@
+# P2
+fun factorial(n) {
+   n>>0?n*factorial(n-1):1
+}
+fun potencia(b,e) {
+   ~e<>0?1:b*potencia(b,e-1)
+}
+fun numCombinatorio(n,m) {
+   factorial(n)/ (factorial(m)*factorial(n-m))
+}
+fun fib(n) {
+   n<=1?1:
+     	fib(n-1)+fib(n-2))
+}
+&
+factorial(5)+potencia(5,2)+fib(5)
+# Este programa es como el p1 pero añadiendo un par de errores incontextuales

@@ -1,0 +1,22 @@
+#este codigo no complia, es para formatear errores
+fun eq( n, m){
+	~n<>m
+}
+
+fun if(bool, ex1, ex2){
+	bool?ex1:ex2
+}
+
+fun fib( fib){
+	if(  fib<0,
+		0,
+	#else
+		if (fib,
+			equals(fib, 1) || fib(fib-1)+fib(n-2) ,
+		#else
+			1
+		)
+	)
+}
+&
+fib( 4)
